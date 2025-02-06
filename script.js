@@ -6,34 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
             const response = await fetch(`https://api.github.com/users/${username}`);
             const profile = await response.json();
             
-            const profileSection = document.createElement('div');
-            profileSection.className = 'profile-section';
-            profileSection.innerHTML = `
-                <div class="profile-card">
-                    <img src="${profile.avatar_url}" alt="${profile.name}" class="profile-image">
-                    <div class="profile-info">
-                        <h2 class="profile-name">${profile.name}</h2>
-                        <p class="profile-bio">${profile.bio || 'Software Developer'}</p>
-                        <div class="profile-stats">
-                            <div class="stat-item" title="Location">
-                                <i class="material-icons">location_on</i>
-                                <span>${profile.location || 'Earth'}</span>
-                            </div>
-                            <div class="stat-item" title="Followers">
-                                <i class="material-icons">people</i>
-                                <span>${profile.followers} followers</span>
-                            </div>
-                            <div class="stat-item" title="Public Repositories">
-                                <i class="material-icons">code</i>
-                                <span>${profile.public_repos} repositories</span>
-                            </div>
-                        </div>
+            const profileHeader = document.querySelector('.profile-header');
+            profileHeader.innerHTML = `
+                <img src="${profile.avatar_url}" alt="${profile.name}" class="profile-image">
+                <h2 class="profile-name">${profile.name}</h2>
+                <p class="profile-bio">${profile.bio || 'Full Stack Software Engineer'}</p>
+                <div class="profile-stats">
+                    <div class="stat-item" title="Location">
+                        <i class="material-icons">location_on</i>
+                        <span>${profile.location || 'Earth'}</span>
+                    </div>
+                    <div class="stat-item" title="Followers">
+                        <i class="material-icons">people</i>
+                        <span>${profile.followers} followers</span>
                     </div>
                 </div>
             `;
-            
-            const container = document.querySelector('.container');
-            container.insertBefore(profileSection, container.firstChild);
         } catch (error) {
             console.error('Error fetching user profile:', error);
         }
