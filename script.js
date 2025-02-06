@@ -1,6 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
     const username = "nitin27may";
-    // Add the repositories you want to display in specific order
+
+    async function fetchUserProfile() {
+        try {
+            const response = await fetch(`https://api.github.com/users/${username}`);
+            const profile = await response.json();
+            
+            const profileSection = document.createElement('div');
+            profileSection.className = 'profile-section';
+            profileSection.innerHTML = `
+                <div class="profile-card">
+                    <img src="${profile.avatar_url}" alt="${profile.name}" class="profile-image">
+                    <div class="profile-info">
+                        <h2 class="profile-name">${profile.name}</h2>
+                        <p class="profile-bio">${profile.bio || 'Software Developer'}</p>
+                        <div class="profile-stats">
+                            <div class="stat-item" title="Location">
+                                <i class="material-icons">location_on</i>
+                                <span>${profile.location || 'Earth'}</span>
+                            </div>
+                            <div class="stat-item" title="Followers">
+                                <i class="material-icons">people</i>
+                                <span>${profile.followers} followers</span>
+                            </div>
+                            <div class="stat-item" title="Public Repositories">
+                                <i class="material-icons">code</i>
+                                <span>${profile.public_repos} repositories</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            const container = document.querySelector('.container');
+            container.insertBefore(profileSection, container.firstChild);
+        } catch (error) {
+            console.error('Error fetching user profile:', error);
+        }
+    }
+
     const selectedRepos = [
         "mean-docker",
         "clean-architecture-docker-dotnet-angular",
@@ -97,5 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    fetchUserProfile();
     fetchRepositories();
 });
