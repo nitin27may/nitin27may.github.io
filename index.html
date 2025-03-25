@@ -3,128 +3,433 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nitin Singh - Software Engineer</title>
+    <title>Nitin Singh | Full Stack Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="layout-grid">
-        <!-- Left Sidebar -->
-        <div class="sidebar">
-          <div class="about-section">
-            <div class="profile-header">
-              <!-- Profile info will be inserted here by JS -->
-            </div>
-            <div class="about-content">
-              <div class="tech-stack">
-                <h3>Technologies</h3>
-                <div class="tech-tags">
-                  <div class="tech-category">
-                    <h4>Frontend</h4>
-                    <span class="tech-tag">Angular</span>
-                    <span class="tech-tag">Vue.js</span>
-                    <span class="tech-tag">HTML/CSS</span>
-                    <span class="tech-tag">JavaScript</span>
-                  </div>
-                  <div class="tech-category">
-                    <h4>Backend</h4>
-                    <span class="tech-tag">.NET Core</span>
-                    <span class="tech-tag">Express.js</span>
-                    <span class="tech-tag">Python</span>
-                  </div>
-                  <div class="tech-category">
-                    <h4>Database</h4>
-                    <span class="tech-tag">MS SQL Server</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">MongoDB</span>
-                  </div>
-                  <div class="tech-category">
-                    <h4>Cloud & DevOps</h4>
-                    <span class="tech-tag">Azure</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Kubernetes</span>
-                    <span class="tech-tag">Microservices</span>
-                  </div>
-                  <div class="tech-category">
-                    <h4>Mobile & Desktop</h4>
-                    <span class="tech-tag">Electron</span>
-                    <span class="tech-tag">Ionic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="contact-links">
-                <a href="https://twitter.com/nitin27may" target="_blank" class="social-link"> <i class="fab fa-twitter"></i> Twitter </a>
-                <a href="https://nitinksingh.com" target="_blank" class="social-link"> <i class="fas fa-blog"></i> Blog </a>
-                <a href="mailto:nitin27may@gmail.com" class="social-link"> <i class="fas fa-envelope"></i> Contact </a>
-              </div>
-            </div>
-          </div>
+    <nav class="main-nav" id="sticky-nav">
+      <div class="container">
+        <a href="#" class="brand">Nitin Singh</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-          <div class="introduction-section">
-            <h2>About Me</h2>
-            <p class="intro">
-              As a hands-on Lead Solutions Architect, I specialize in designing and implementing innovative cloud architectures with a robust command of Azure
-              technologies. Drawing from my background as a Senior Software Engineer, I regularly contribute to codebases using .NET and Angular, ensuring
-              practical, maintainable, and scalable solutions. My approach combines high-level architectural vision with detailed technical implementation.
-            </p>
-
-            <div class="expertise-grid">
-              <!-- Existing Items -->
-              <div class="expertise-item">
-                <h3><i class="fas fa-cloud"></i> Azure Cloud Solutions</h3>
-                <p>Proficient across the Azure ecosystem, including AI services, Kubernetes, Azure DevOps, and GitHub Actions.</p>
-              </div>
-
-              <!-- New Items -->
-              <div class="expertise-item">
-                <h3><i class="fas fa-project-diagram"></i> Solution Architecture</h3>
-                <p>Designing and implementing enterprise-grade cloud solutions with focus on scalability, reliability, and business value.</p>
-              </div>
-              <div class="expertise-item">
-                <h3><i class="fas fa-laptop-code"></i> Technical Leadership</h3>
-                <p>Leading by example through active coding, architectural decisions, and implementing best practices in cloud-native development.</p>
-              </div>
-              <div class="expertise-item">
-                <h3><i class="fas fa-laptop-code"></i> Frontend Expertise</h3>
-                <p>Crafting interactive and dynamic web applications using Angular, with emphasis on intuitive design and optimal performance.</p>
-              </div>
-              <div class="expertise-item">
-                <h3><i class="fas fa-server"></i> Backend Proficiency</h3>
-                <p>Extensive experience with ASP.NET Core Web APIs and Express.js, building powerful and scalable server-side applications.</p>
-              </div>
-
-              <div class="expertise-item">
-                <h3><i class="fas fa-database"></i> System Integration</h3>
-                <p>Building and implementing complex integrations using Azure services, focusing on scalable document management and workflow automation.</p>
-              </div>
-              <div class="expertise-item">
-                <h3><i class="fas fa-database"></i> Document Management</h3>
-                <p>Building sophisticated document management systems using Azure Storage, SharePoint Online, and Azure's comprehensive service suite.</p>
-              </div>
-              <div class="expertise-item">
-                <h3><i class="fas fa-cogs"></i> DevOps & Automation</h3>
-                <p>Implementing CI/CD pipelines and infrastructure as code practices to streamline development and deployment workflows.</p>
-              </div>
-            </div>
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <header class="hero-section">
+      <div class="hero-content">
+        <div class="profile-card">
+          <div class="profile-header" id="profile-header">
+            <!-- Profile info will be inserted here by JS -->
           </div>
-
-          <div class="repositories-section">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="row" id="repo-container"></div>
+          <div class="profile-summary">
+            <h1 class="profile-title">Full Stack Engineer</h1>
+            <p class="profile-tagline">Building enterprise-grade solutions with .NET Core, Node.js, Python, Angular, Vue.js, and Azure cloud services.</p>
+            <div class="hero-cta">
+              <a href="#experience" class="btn-primary">View Experience</a>
+              <a href="#projects" class="btn-secondary">See Projects</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <script src="script.js"></script>
+    <main class="content-wrapper">
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Me</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="about-content">
+            <p class="lead-text">
+              With over 15 years of experience, I design and deliver enterprise-grade solutions using modern technologies. I excel at architecting scalable
+              microservices and have a strong track record of successful remote project delivery. As both an individual contributor and team collaborator, I
+              transform complex requirements into production-ready applications by combining deep technical expertise with strong business insights.
+            </p>
+            <p>
+              My approach focuses on building maintainable, efficient solutions that drive business value through innovative technology integration. Whether
+              working independently or leading teams, I consistently deliver high-quality software that meets both technical specifications and business
+              objectives.
+            </p>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Full Stack Development</h3>
+              <p>Building end-to-end solutions from backend APIs to responsive front-ends using .NET Core, Angular, and modern JavaScript frameworks.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>Cloud Engineering</h3>
+              <p>Implementing comprehensive Azure cloud solutions including AI services, serverless architecture, and DevOps automation.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>AI & Intelligent Automation</h3>
+              <p>
+                Implementing cognitive solutions using Azure AI services to automate document processing, extract insights from unstructured data, and create
+                intelligent workflows that reduce manual effort and improve accuracy.
+              </p>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>DevOps & Continuous Delivery</h3>
+              <p>
+                Building automated CI/CD pipelines with Azure DevOps, GitHub Actions, and GitLab, enabling rapid delivery through containerization with Docker
+                and Kubernetes, and implementing infrastructure as code for reliable deployments.
+              </p>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>Enterprise Integration</h3>
+              <p>Creating robust integration solutions for complex business systems using Azure's comprehensive service suite.</p>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h3>Solution Architecture</h3>
+              <p>Designing scalable microservice architectures and cloud-native applications with a focus on performance and maintainability.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Expertise</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skill-categories">
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i>Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">.NET Core</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Web API</span>
+              <span class="skill-tag">ASP.NET</span>
+              <span class="skill-tag">Entity Framework</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">NestJS</span>
+              <span class="skill-tag">NodeJS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MS SQL Server</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Azure Cosmos DB</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Azure SQL Database</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Azure App Service</span>
+              <span class="skill-tag">Azure Functions</span>
+              <span class="skill-tag">Azure Logic Apps</span>
+              <span class="skill-tag">Azure Service Bus</span>
+              <span class="skill-tag">Azure Blob Storage</span>
+              <span class="skill-tag">Azure AI Services</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Azure DevOps</span>
+              <span class="skill-tag">GitLab CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Work Experience (Recent)</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Full Stack Engineer</h3>
+                <span class="timeline-period"> 2021 - Present</span>
+              </div>
+
+              <div class="project-card">
+                <h4>FNOL Process Automation</h4>
+                <p>
+                  Designed and implemented an automated First Notice of Loss (FNOL) system that processes claims via email using Azure AI Document Intelligence
+                  and Azure Open AI. Reduced operational time by 60% and cut costs by 60%.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">Azure AI Document Intelligence</span>
+                  <span class="tech-pill">Azure Open AI</span>
+                  <span class="tech-pill">.NET Core</span>
+                  <span class="tech-pill">Logic App</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>SaaS-Based Property Management System</h4>
+                <p>
+                  Developed a cloud-based platform managing multi-owner and multi-tenant properties with features for maintenance fees, service ticketing, and
+                  meeting scheduling. Designed with microservices architecture using C# .NET Core and Angular.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">C# .NET Core</span>
+                  <span class="tech-pill">Angular</span>
+                  <span class="tech-pill">PostgreSQL</span>
+                  <span class="tech-pill">Azure</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>High-Performance File Upload API</h4>
+                <p>
+                  Built a robust API handling files up to 10GB with chunked uploads and resumable functionality. Implemented multi-threaded processing and
+                  event-driven retry mechanisms using Azure Functions.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">.NET 9</span>
+                  <span class="tech-pill">Azure Blob Storage</span>
+                  <span class="tech-pill">Azure Functions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Technical Lead</h3>
+                <span class="timeline-period">LTIMindtree | 2018 - 2021</span>
+              </div>
+
+              <div class="project-card">
+                <h4>Claims Document Management System Modernization</h4>
+                <p>
+                  Led architectural design and modernization of the Document Management System, creating custom API and UI layers on SharePoint Online Graph API
+                  with Azure services for enhanced functionality.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">.NET Core</span>
+                  <span class="tech-pill">Angular</span>
+                  <span class="tech-pill">SharePoint Online</span>
+                  <span class="tech-pill">Azure</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>Real-Time Communication Integration</h4>
+                <p>
+                  Architected and implemented Azure SignalR integration into an existing application, enabling real-time updates while maintaining Azure AD
+                  Single Sign-on for secure authentication.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">.NET Core</span>
+                  <span class="tech-pill">Angular</span>
+                  <span class="tech-pill">Azure SignalR</span>
+                  <span class="tech-pill">Azure AD</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>CI/CD Pipeline Optimization</h4>
+                <p>
+                  Revamped Azure DevOps CI/CD pipeline using YAML-based configuration, automating deployment processes for various application components using
+                  ARM templates.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">Azure DevOps</span>
+                  <span class="tech-pill">YAML</span>
+                  <span class="tech-pill">ARM Templates</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Senior Software Engineer</h3>
+                <span class="timeline-period">LTIMindtree | 2016 - 2018</span>
+              </div>
+
+              <div class="project-card">
+                <h4>Claims System Modernization</h4>
+                <p>
+                  Played a pivotal role in end-to-end modernization of the Claims System, developing Angular frontend and .NET Core Microservices, migrating
+                  business logic from ESB services to the API layer.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">Angular</span>
+                  <span class="tech-pill">.NET Core</span>
+                  <span class="tech-pill">Microservices</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>3rd Party API Integration</h4>
+                <p>
+                  Integrated third-party APIs to push data to external broker and vendor systems, developing a system to send data to Health Claims for Auto
+                  Insurance using Worker Service.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">.NET Core</span>
+                  <span class="tech-pill">Worker Service</span>
+                  <span class="tech-pill">DB2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Earlier Engineering Roles</h3>
+                <span class="timeline-period">2009 - 2016</span>
+              </div>
+              
+              <div class="project-card earlier-exp-card">
+                <h4>Foundation & Growth</h4>
+                <p>
+                  After completing my B.Tech. in Computer Science & Engineering, I built a strong foundation in software development 
+                  through various engineering roles. During this period, I developed expertise in .NET technologies, web development, 
+                  and database management while working on enterprise applications.
+                </p>
+                <div class="tech-used">
+                  <span class="tech-pill">.NET</span>
+                  <span class="tech-pill">C#</span>
+                  <span class="tech-pill">SQL Server</span>
+                  <span class="tech-pill">Web Development</span>
+                </div>
+                
+                <div class="additional-experience">
+                  <p class="more-info-text">
+                    <i class="fas fa-info-circle"></i>
+                    Detailed work history available upon request
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">A collection of my open-source projects and code examples showcasing various technologies and implementation patterns.</p>
+        </div>
+
+        <div class="projects-grid" id="repo-container">
+          <!-- Repositories will be loaded here by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-content">
+          <p class="contact-message">
+            Looking for a skilled full stack engineer to bring your project to life? I'm available for freelance opportunities and open to discussing how I can
+            help your team succeed. Feel free to reach out!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:nitin.singh21@hotmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>nitin.singh21@hotmail.com</span>
+            </a>
+            <!-- <a href="https://www.linkedin.com" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a> -->
+            <a href="https://github.com/nitin27may" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://nitinksingh.com" target="_blank" class="contact-link">
+              <i class="fas fa-blog"></i>
+              <span>Blog</span>
+            </a>
+            <a href="https://twitter.com/nitin27may" target="_blank" class="contact-link">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
